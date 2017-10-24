@@ -16,6 +16,9 @@ apt-get install puppet-agent -y
 # Enable the agent
 /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 
+# Clean up
+rm puppet5-release-xenial.deb
+
 init 6
 # Run a quick test
 #/opt/puppetlabs/bin/puppet agent --test

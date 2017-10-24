@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Basic configuration
+cp /home/caretaker/pfun/conf/agent/etc/hosts /etc/hosts
+cp /home/caretaker/pfun/conf/agent/etc/hostname /etc/hostname
+cp /home/caretaker/pfun/conf/agent/etc/network/interfaces /etc/network/interfaces
+
 # Enable repo's first
 wget https://apt.puppetlabs.com/puppet5-release-xenial.deb
 dpkg -i puppet5-release-xenial.deb

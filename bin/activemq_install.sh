@@ -10,3 +10,4 @@ java -version
 
 rm apache-activemq-5.14.5-bin.tar.gz
 
+cp /home/caretaker/pfun/conf/activemq/activemq.xml /opt/apache-activemq-5.14.5/conf/activemq.xml

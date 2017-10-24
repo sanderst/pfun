@@ -1,0 +1,1 @@
+sudo puppet module install puppetlabs-java_ks --version 1.6.0

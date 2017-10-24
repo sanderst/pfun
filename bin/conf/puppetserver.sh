@@ -13,3 +13,6 @@ cp /home/caretaker/pfun/conf/master/etc/default/puppetserver /etc/default/puppet
 
 # Enable the server
 /opt/puppetlabs/bin/puppet resource service puppetserver ensure=running enable=true
+
+# Clean up
+rm puppet5-release-xenial.deb

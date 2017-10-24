@@ -126,7 +126,7 @@
         <transportConnectors>
             <transportConnector name="openwire" uri="tcp://0.0.0.0:61616"/>
             <transportConnector name="stomp+nio" uri="stomp+nio://0.0.0.0:61613"/>
-            <transportConnector name="stomp+ssl+nio" uri="stomp+ssl+nio://0.0.0.0:61614?needClientAuth=true&amp;transport.enabledProtocols=TLSv1,TLSv1.1,TLSv1.2"/>
+            <transportConnector name="stomp+ssl" uri="stomp+ssl://0.0.0.0:61614?needClientAuth=true&amp;transport.enabledProtocols=TLSv1,TLSv1.1,TLSv1.2"/>
         </transportConnectors>
     </broker>
 

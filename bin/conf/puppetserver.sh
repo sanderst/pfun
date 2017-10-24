@@ -1,8 +1,16 @@
 #!/bin/bash
 
 # Enable repo's first
-wget https://apt.puppetlabs.com/puppet5-release-xenial.deb
-dpkg -i puppet5-release-xenial.deb
+# Version 5.x
+#wget https://apt.puppetlabs.com/puppet5-release-xenial.deb
+#dpkg -i puppet5-release-xenial.deb
+#rm puppet5-release-xenial.deb
+
+# Version 4.x
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+dpkg -i puppetlabs-release-pc1-xenial.deb
+rm puppetlabs-release-pc1-xenial.deb
+
 apt update -y
 
 # Install puppetserver
@@ -16,6 +24,3 @@ cp /home/caretaker/pfun/conf/master/etc/default/puppetserver /etc/default/puppet
 
 # Add path
 ln -s /opt/puppetlabs/bin/puppet /usr/bin/
-
-# Clean up
-rm puppet5-release-xenial.deb

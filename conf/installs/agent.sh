@@ -16,7 +16,8 @@ apt-get install puppet-agent -y
 # Enable the agent
 /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 
+init 6
 # Run a quick test
-/opt/puppetlabs/bin/puppet agent --test
+#/opt/puppetlabs/bin/puppet agent --test
 
 echo "Check on the master for the certificate request"
